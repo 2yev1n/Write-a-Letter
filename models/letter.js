@@ -5,7 +5,6 @@ module.exports = (sequelize, DataTypes) => {
         bag_id: {
             type: DataTypes.STRING(15),
             allowNull: false,
-            primaryKey: true,
         },
         context: {
             type: DataTypes.TEXT,
@@ -20,7 +19,7 @@ module.exports = (sequelize, DataTypes) => {
         sequelize,
         timestamps: true,
         modelName: 'Letter',
-        tableName: 'letter',
+        tableName: 'letters',
         paranoid: false,
         charset: "UTF8MB4",
         collate: "UTF8MB4_GENERAL_CI"

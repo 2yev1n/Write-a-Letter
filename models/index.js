@@ -20,7 +20,7 @@ db.Letter = require("./letter")(sequelize, Sequelize);
 db.User.hasMany(db.Luckybag, { foreignKey: "bag_id", targetKey: "user_id" });
 db.Luckybag.belongsTo(db.User, { foreignKey: "bag_id" });
 
-db.User.hasMany(db.Letter, { foreignKey: "bag_id", targetKey: "user_id" });
-db.Letter.belongsTo(db.User, { foreignKey: "bag_id" });
+db.Luckybag.hasMany(db.Letter, { foreignKey: "bag_id", targetKey: "bag_id" });
+db.Letter.belongsTo(db.Luckybag, { foreignKey: "bag_id" });
 
 module.exports = db;

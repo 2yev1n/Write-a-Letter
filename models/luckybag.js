@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
         sequelize,
         timestamps: false,
         modelName: 'Bag',
-        tableName: 'bag',
+        tableName: 'bags',
         paranoid: false,
         charset: "UTF8MB4",
         collate: "UTF8MB4_GENERAL_CI"
