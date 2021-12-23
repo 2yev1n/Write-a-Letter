@@ -2,6 +2,12 @@ const Sequelize = require("sequelize");
 
 module.exports = (sequelize, DataTypes) => {
     return sequelize.define("letter", {
+        id: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+            primaryKey: true,
+            autoIncrement: true
+        },
         bag_id: {
             type: DataTypes.STRING(15),
             allowNull: false,
